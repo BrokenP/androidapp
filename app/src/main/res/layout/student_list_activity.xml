@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Đây là biểu tượng 2 -->
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="149dp"
+        android:gravity="center"
+        android:text="Danh sách sinh viên"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginBottom="556dp"
+        android:src="@drawable/a43"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="133dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="140dp"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="Set"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="445dp"
+        android:layout_above="@+id/buttonLayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="238dp"
+        android:choiceMode="singleChoice"
+        android:visibility="visible">
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="557dp"
+        android:src="@drawable/a44"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/UIExport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/Excel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Export Excel"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/imp_json"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Import JSON" />
+
+        <Button
+            android:id="@+id/ex_json"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Export JSON" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="Xóa" />
+
+        <Button
+            android:id="@+id/Export"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="Export" />
+
+    </LinearLayout>
+</RelativeLayout>
